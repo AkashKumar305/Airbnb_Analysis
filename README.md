@@ -25,5 +25,5 @@ This repository contains a Python script for analyzing Airbnb data using MongoDB
 8. Create a Tableau Dashboard on the Airbnb dataset
 
 ## Airbnb Dashboard
-![Airbnb Dashboard](Dashboard_Image.jpg)
+![Airbnb Dashboard](Dashboard_Image.png)
 

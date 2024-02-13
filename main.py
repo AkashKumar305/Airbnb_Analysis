@@ -121,7 +121,7 @@ def mapbox(df, lat, lon, color, size, hover_name, style, title, color_sequence, 
 
 def main():
     # Load Airbnb data from CSV file
-    df = pd.read_csv(r'C:\Users\vijay\GUVI Python\Project\Airbnb\airbnb.csv')
+    df = pd.read_csv('your_airbnb.csv_path')
 
     # Configure page layout
     st.set_page_config(layout = 'wide')

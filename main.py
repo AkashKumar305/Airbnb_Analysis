@@ -28,7 +28,6 @@ def home():
 def filter_data(df, price_range, rating_range, selected_country):
     # Filter data based on user input (price range, rating range, country)
     with st.sidebar:
-        selected_country = st.selectbox('Select a Country:', [ALL_COUNTRIES] + list(df['country'].unique()))
 
         if selected_country != ALL_COUNTRIES:
             filtered_data = df[
@@ -121,7 +120,7 @@ def mapbox(df, lat, lon, color, size, hover_name, style, title, color_sequence, 
 
 def main():
     # Load Airbnb data from CSV file
-    df = pd.read_csv('your_airbnb.csv_path')
+    df = pd.read_csv(r'your_path\airbnb.csv')
 
     # Configure page layout
     st.set_page_config(layout = 'wide')
@@ -138,13 +137,14 @@ def main():
         st.title('Airbnb Listings Distribution Map')
         
         # User input for filtering and sorting
-        price_range = st.slider('Select Price Range: ', min_value=PRICE_MIN, max_value=PRICE_MAX, step=1000,
+        with st.sidebar:
+            price_range = st.slider('Select Price Range: ', min_value=PRICE_MIN, max_value=PRICE_MAX, step=1000,
                                 value=(PRICE_MIN, PRICE_MAX))
 
-        rating_range = st.slider('Select Rating Range: ', min_value=SCORE_MIN, max_value=SCORE_MAX, step=10,
+            rating_range = st.slider('Select Rating Range: ', min_value=SCORE_MIN, max_value=SCORE_MAX, step=10,
                                  value=(SCORE_MIN, SCORE_MAX))
 
-        selected_country = st.selectbox('Select a Country:', [ALL_COUNTRIES] + list(df['country'].unique()))
+            selected_country = st.selectbox('Select a Country:', [ALL_COUNTRIES] + list(df['country'].unique()))
 
         # Filter and sort data based on user input
         filtered_data = filter_data(df, price_range, rating_range, selected_country)

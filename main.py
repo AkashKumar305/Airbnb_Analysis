@@ -87,7 +87,7 @@ def bar_chart(df, x, y, color = None, title = None, labels = None, category_orde
     # Create a Bar Chart
     fig = px.bar(df, 
              x = x, 
-             y = x,
+             y = y,
              color = color ,
              title = title,
              labels = labels,

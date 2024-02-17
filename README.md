@@ -46,5 +46,6 @@ The project's primary goal is to analyze Airbnb data, clean and prepare the data
 
 ## Airbnb Dashboard
 Link: https://public.tableau.com/app/profile/akash.kumar.l/viz/AirbnbDashboard_17078213219580/Dashboard1#1
+
 ![Airbnb Dashboard](Dashboard_Image.png)
 

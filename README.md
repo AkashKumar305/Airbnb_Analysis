@@ -44,6 +44,10 @@ The project's primary goal is to analyze Airbnb data, clean and prepare the data
 8. **Create a Tableau Dashboard on the Airbnb dataset**
    - Utilize Tableau to create a comprehensive dashboard based on the insights gained from the Streamlit application.
 
+## LinkedIn Profile
+Link: www.linkedin.com/in/akashkumarl
+Visit the link to see the project video
+
 ## Airbnb Dashboard
 Link: https://public.tableau.com/app/profile/akash.kumar.l/viz/AirbnbDashboard_17078213219580/Dashboard1#1
 

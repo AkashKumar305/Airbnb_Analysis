@@ -21,7 +21,7 @@ The project's primary goal is to analyze Airbnb data, clean and prepare the data
 5. Analyze availability patterns across seasons, visualizing occupancy rates and demand fluctuations.
 6. Investigate location-based insights by extracting and visualizing data for specific regions or neighborhoods.
 7. Create interactive visualizations allowing users to filter and drill down into the data.
-8. Build a comprehensive dashboard using Tableau or Power BI, presenting key insights from the analysis.
+8. Build a comprehensive dashboard using Tableau, presenting key insights from the analysis.
 
 ## Workflow Execution
 1. **Clone the repository**
